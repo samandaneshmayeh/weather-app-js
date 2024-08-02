@@ -18,6 +18,8 @@ body {
     margin: auto;
 }
 
+/* header */
+
 #search {
     display: flex;
     justify-content: center;
