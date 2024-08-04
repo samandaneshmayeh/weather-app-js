@@ -27,30 +27,3 @@ const searchHandler = async () => {
 }
 
 searchButton.addEventListener("click", searchHandler);
-
-// const BASE_URL = "https://api.openweathermap.org/data/2.5";
-// const API_KEY = "95620bdacaa86f677c1657937565f524";
-
-// const searchInput = document.querySelector("input");
-// const searchButton = document.querySelector("button");
-
-
-// const clickHandler = () => {
-
-//     const cityName = searchInput.value;
-
-//     if (!cityName) {
-//         alert("Please Enter valid data!")
-//     }
-
-//     const getCurrentData = async (cityName) => {
-//         const response = await fetch(`${BASE_URL}/weather?q=${cityName}&appid=${API_KEY}&units=metric`);
-//         const json = await response.json();
-//         console.log(json) 
-//     }
-
-//     getCurrentData();
-
-// }
-
-// searchButton.addEventListener("click", clickHandler);
