@@ -1,3 +1,5 @@
+import {showModal} from "./utils/modal.js";
+
 const BASE_URL = "https://api.openweathermap.org/data/2.5";
 const API_KEY = "95620bdacaa86f677c1657937565f524";
 const DAYS = [
@@ -80,7 +82,7 @@ const searchHandler = async () => {
     const cityName = searchInput.value;
 
     if(!cityName) {
-        alert("for know about the weather you must write your city name!");
+        showModal("for know about the weather you must write your city name!");
     }
 
     const currentData = await getCurrentWeatherByName(cityName);
@@ -107,7 +109,7 @@ const locationHandler = () => {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(positionCallback, errorCallback);
     } else {
-        alert("Your browser does not support geolocation!")
+        showModal("Your browser does not support geolocation!")
     }
 }
 
